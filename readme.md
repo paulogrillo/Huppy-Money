@@ -9,3 +9,7 @@ Website
 </a>
 
 ##### <center>inspired by the rockerseat bootcamp event
+
+#Start project 
+
+Comand `yarn start` or `npm start`
