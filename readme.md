@@ -4,7 +4,7 @@
 
 #### <center>A app for financial education
 
-<a href="huppymoney.vercel.app/">
+<a href="https://huppymoney.vercel.app/">
 Website
 </a>
 
