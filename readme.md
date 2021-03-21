@@ -2,14 +2,14 @@
      alt="Markdown Monster icon"
      style="float: cent" />
 
-#### <center>A app for financial education
+#### A app for financial education
 
 <a href="https://huppymoney.vercel.app/">
 Website
 </a>
 
-##### <center>inspired by the rockerseat bootcamp event
+##### inspired by the rockerseat bootcamp event 
 
-#Start project 
+### Start project 
 
-Comand `yarn start` or `npm start`
+command `yarn start` or `npm start`
