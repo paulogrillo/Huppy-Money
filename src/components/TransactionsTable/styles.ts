@@ -6,6 +6,8 @@ export const Container = styled.div`
     table {
         width: 100%;
         border-spacing: 0 0.5rem;
+        border: 0.12rem solid #eef;
+        
         
         th {
             color: var (--text-body);
@@ -13,12 +15,15 @@ export const Container = styled.div`
             padding: 1rem 2rem;
             text-align: left;
             line-height: 1.5;
+            
         }
         td {
             padding: 1rem 2rem;
             border: 0;
             background: var(--shape-table);
             color: var(--text-body);
+            
+            
             
         
             
