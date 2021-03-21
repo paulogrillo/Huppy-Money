@@ -1,10 +1,7 @@
 ---
-<center><img src="./src/assets/huppy-money.png"
+<img src="./src/assets/huppy-money.png"
      alt="Markdown Monster icon"
-     style="float: center;" />
-
+     style="float: cent" />
 #### <center>A app for financial education
 ##### <center>inspired by the rockerseat bootcamp event
 ---
-
-
