@@ -27,6 +27,13 @@ export function App() {
         isOpen={isNewTransactionModalOpen} 
         onRequestClose={handleCloseNewTransactionModal}
         >
+      
+            <label>
+            <small id="emailHelpId" className="form-text text-muted">Help text</small>
+            </label>
+           
+            
+          
             <h2>Cadastrar trasação</h2>
         </Modal>
       <GlobalStyle />
