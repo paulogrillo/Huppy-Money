@@ -13,8 +13,14 @@ h2 {
    
     width: 100%;
     padding: 0 1.5rem;
-    height: 2rem;
+    height: 2.5rem;
     margin-top: 1.5rem;
+    color: #f1f1f1;
+    background: #e52e4d;
+    border: none;
+outline: none;
+    font-size: 1.5rem;
+
 }
 
 input {
@@ -36,10 +42,12 @@ input {
 
     textarea:focus, input:focus {
     color: #f1f1f1;
+    font-size: 1.5rem;
 }
 
     input::placeholder{
-  color: #f1f1f1;
+    color: #f1f1f1;
+    font-size: 1.5rem;
 }
     textarea:focus, input:focus{
     outline: none;
