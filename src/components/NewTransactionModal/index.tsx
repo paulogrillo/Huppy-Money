@@ -26,7 +26,9 @@ export function NewTransactionModal({ isOpen, onRequestClose}: NewTransactionMod
             />
 
            <button 
-            type="submit">
+            type="submit"
+            className="button"
+            >
                Cadastrar
            </button>
 
