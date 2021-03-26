@@ -18,7 +18,8 @@ button[type="submit"] {
     .25rem;
     border: 0;
     outline: none;
-    font-size: 2rem;
+    font-size: 1.9rem;
+    font-weight: 600;
     margin-top: 2.5rem;
 
     transition: 0.5s;
@@ -46,6 +47,7 @@ input {
      font-size: 1.2rem;
      & + input{
          margin-top: 1rem;
+        
       
      }
      & + input::placeholder{
