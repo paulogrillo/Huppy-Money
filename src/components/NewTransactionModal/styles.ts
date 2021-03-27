@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import {darken} from 'polished';
+
+
 
 export const Container = styled.form`
 
@@ -7,31 +10,47 @@ h2 {
      color: var(--text-title);
      font-size: 2rem;
      margin-bottom: 2rem;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }  
 
 button[type="submit"] {
     width: 100%;
-    padding: 0 1.5;
+    height: 5rem;
+    padding: 0 2.5;
     background: var(--green);
     color: #f1f1f1; 
     border-radius: 0
     .25rem;
-    border: 0;
+   
+    border: 1px solid #d7d7d7;
     outline: none;
     font-size: 1.9rem;
     font-weight: 600;
     margin-top: 2.5rem;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.5s;
 
     &:hover {
-        background: #12A630;
-        
+        background: transparent;
+        color: var(--myheader);
+        border: 0.25rem solid #75DBB9;
+       
         
     }
+    
 
 }
 
+.input-title {
+    &:hover{
+        border-color: ${darken(0.1, '#d7d7d7')};        
+    }
+}
+
+.resumo {
+    margin-bottom: 1.8rem;
+    color: var(--myheader);
+}
 
 input {
      color: #aaaaaa;
@@ -42,11 +61,14 @@ input {
 
      border: 1px solid #d7d7d7;
      background: #eff9;
-
+     outline: none;
      font-weight: 400;
      font-size: 1.2rem;
      & + input{
          margin-top: 1rem;
+
+    &:hover{
+    border-color: ${darken(0.1, '#d7d7d7')};
         
       
      }
@@ -69,7 +91,7 @@ input {
     outline: none;
 }
 
-
+}
 
 `;
 
@@ -92,7 +114,7 @@ button{
     outline: none;
 
     &:hover{
-        border-color: var(--myheader);
+        border-color: ${darken(0.1, '#d7d7d7')};
     &:active{
         border-color: var(--myheader);
     }

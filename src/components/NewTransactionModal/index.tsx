@@ -33,9 +33,11 @@ export function NewTransactionModal({ isOpen, onRequestClose}: NewTransactionMod
 
         <Container>
             <h2>Cadastrar transação</h2>
+            <p className="resumo">Registre uma nova atividade financeira.</p>
 
             <input 
                 placeholder="Título"
+                className="input-title"
             />
             
             <input 
