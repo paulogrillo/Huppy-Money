@@ -72,3 +72,7 @@ input {
 
 
 `;
+
+export const TransactionTypeContainer = styled.div`
+
+`;

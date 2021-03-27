@@ -83,6 +83,19 @@ button {
     outline: none;
 }
 
+.react-modal-closed {
+    position: absolute;
+    right: 2.5rem;
+    border: 0;
+    background: transparent;
+    outline: none;
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+
 
 
 `
