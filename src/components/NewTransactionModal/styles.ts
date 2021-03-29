@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import {darken} from 'polished';
+import {darken, transparentize} from 'polished';
 
 
 
@@ -10,7 +10,7 @@ h2 {
      color: var(--text-title);
      font-size: 2rem;
      margin-bottom: 2rem;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
 }  
 
 button[type="submit"] {
@@ -69,6 +69,7 @@ input {
 
     &:hover{
     border-color: ${darken(0.1, '#d7d7d7')};
+    
         
       
      }
@@ -100,13 +101,29 @@ export const TransactionTypeContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+`;
 
-button{
+interface RadioBoxProps {
+    isActive: boolean;
+    activeColor: 'green' | 'red';
+};
+
+const colors = {
+    green: '#33CC95',
+    red: '#E52E4D'
+};
+
+export const RadioBox = styled.button<RadioBoxProps> `
+    
     height: 4rem;
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
 
-    background: transparent;
+    background: ${(props) => props.isActive 
+    ? transparentize(0.8, colors[props.activeColor])
+    : 'transparent'
+    
+    };
 
     display: flex;
     align-items: center;
@@ -133,5 +150,4 @@ button{
 
     }
 
-}
 `;

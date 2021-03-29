@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createServer } from 'miragejs';
 import {App} from './App';
+import { request } from 'node:http';
 
 createServer({
   routes(){
@@ -14,11 +15,16 @@ createServer({
           title: 'Transation 1',
           amount: 400,
           type: 'deposit',
-          category: 'food',
           createdAt: new Date()
         }
       ]
     }) 
+
+    this.post('/transactions', (schema, request) =>{
+      const data = JSON.parse(request.requestBody)
+
+      return data
+    })
   }
 })
 

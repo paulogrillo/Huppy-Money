@@ -10,12 +10,10 @@ export function Header({onOpenNewTransactionModal}: Headerprops){
     return(
         <Container>
             <Content>
-                <img src={logoImg} alt="at money"/>
+                <img src={logoImg} alt="Huppy money"/>
                 <button type="button" onClick={onOpenNewTransactionModal}>
                 Nova transação
                 </button>
-
-
             </Content>
         </Container>
     )
