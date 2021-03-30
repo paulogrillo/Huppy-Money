@@ -1,12 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { api } from '../../services/apis';
 import {Container} from './styles'
 
-export function TransactionsTable(){
+interface Transactions{
+    id: number;
+    title: string;
+    amount: number;
+    type: string;
+    createdAt: string;
+}
 
+export function TransactionsTable(){
+    
+    const [transactions, setTransactions] = useState<Transactions[]>([]);
+    
     useEffect(() => {
         api.get('/transactions')
-        .then(response => console.log(response.data))
+        .then(response => setTransactions(response.data.transactions))
     }, []);
     
     return(
@@ -22,39 +32,19 @@ export function TransactionsTable(){
         </thead>
 
         <tbody>
-            <tr>
-                <td>Salário</td>
-                <td className="deposit">R$ 12.700</td>
-                <td>20/02/21</td>
+
+        {transactions.map(transactions => (
+            
+            <tr key={transactions.id}>
+                <td>{transactions.title}</td>
+                
+                <td className={transactions.type}> 
+                {transactions.amount}</td>
+                <td>{transactions.createdAt}</td>
             </tr>
-
-            <tr>
-                <td>Aluguel</td>
-                <td className="widthdraw">-R$ 2.850</td>
-                <td>18/03/21</td>
-            </tr>
-
-            <tr>
-                <td>Freela</td>
-                <td className="deposit">R$ 1.500</td>
-                <td>20/02/21</td>
-            </tr>
-
-
-            <tr>
-                <td>Compras</td>
-                <td className="widthdraw">-R$ 300.00</td>
-                <td>20/02/21</td>
-            </tr>
-
-            <tr>
-                <td>Plano de Telefone</td>
-                <td className="widthdraw">-R$ 50.00</td>
-                <td>18/03/21</td>
-            </tr>
-
-
-            </tbody>
+         
+        ))}
+        </tbody>
 
           </table>
       </Container>
