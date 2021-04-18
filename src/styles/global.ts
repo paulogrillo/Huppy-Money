@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle `
     --blue: #F2DDB6;
     --shape-table: #29D2;
     --myheader: #2D90A6;
-    --blue-ligth: #D92e51;
+    --blue-ligth: #2CDB78;
     --blue-total: #33b564;
     --green: #33b564;
 

@@ -18,12 +18,11 @@ img {
 
  }
  button {
-     
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
     background: var(--blue-ligth);
     border: 0;
-    padding: 0 2rem;
+    padding: 0 1rem;
     border-radius: 0.25rem;
     height: 3rem;
 transition: filter 0.2s;
@@ -33,6 +32,19 @@ outline: none;
 }
 
 }
+
+.button-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    @media (max-width: 700px){
+            width: 2rem;
+            height: 2rem;
+
+        }
+
+}
+
 
 
 `;

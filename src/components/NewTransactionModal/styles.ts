@@ -34,7 +34,6 @@ button[type="submit"] {
         background: transparent;
         color: var(--myheader);
         border: 0.25rem solid #75DBB9;
-       
         
     }
     
@@ -134,6 +133,7 @@ export const RadioBox = styled.button<RadioBoxProps> `
         border-color: ${darken(0.1, '#d7d7d7')};
     &:active{
         border-color: var(--myheader);
+  
     }
     }
 
